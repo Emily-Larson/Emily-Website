@@ -63,7 +63,7 @@
         }
 
         header .links a:hover {
-            color: #00308f;
+            color: #a9d256;
         }
 
         header nav {
@@ -80,7 +80,7 @@
         }
 
         header nav a:hover {
-            color: #00308f;
+            color: #a9d256;
         }
 
         /* Introduction Section */
@@ -112,8 +112,8 @@
 
         .resume-button {
             text-decoration: none;
-            color: white;
-            border: 2px solid white;
+            color: black;
+            border: 2px solid black;
             padding: 0.7rem 1.5rem;
             border-radius: 5px;
             font-size: 1rem;
@@ -147,7 +147,7 @@
         }
         .about h2 {
             font-size: 2.5rem;
-            color: #00308f;
+            color: #a9d256;
             margin-bottom: 1.5rem;
             text-align: center; /* Center-align the title */
 
@@ -192,7 +192,7 @@
             align-items: center;
             width: 100px; /* Fixed width for square boxes */
             height: 100px; /* Fixed height for square boxes */
-            border: 2px solid #00308f; /* Red outline for boxes */
+            border: 2px solid #a9d256; /* Green outline for boxes */
             border-radius: 10px; /* Rounded corners */
             background: transparent; /* Transparent background */
             text-align: center;
@@ -226,7 +226,7 @@
 
         .projects h2 {
             font-size: 2.5rem;
-            color: #00308f;
+            color: #a9d256;
             margin-bottom: 2rem;
         }
 
@@ -262,7 +262,7 @@
 
         .project-item a {
             text-decoration: none;
-            color: #00308f;
+            color: #a9d256;
             font-weight: bold;
             transition: color 0.3s;
         }
@@ -278,7 +278,7 @@
 
         .experience h2 {
             font-size: 2.5rem;
-            color: #00308f;
+            color: #a9d256;
             margin-bottom: 2rem;
         }
 
@@ -313,7 +313,7 @@
 
         .education h2 {
             font-size: 2.5rem;
-            color: #00308f;
+            color: #a9d256;
             margin-bottom: 2rem;
         }
 
@@ -403,8 +403,22 @@
 
     <!-- Introduction Section -->
     <div id="home" class="intro">
-        <h1>Hello, I'm <span>Emily.</span></h1>
-        <p>
+        <h1 style="color: black;">Hello There, I'm         <span class="animated-name">Emily</span></h1>
+        <p style="color: black;">
+        <style>
+            @keyframes colorChange {
+                0% { color: #000080; } /* Navy Blue */
+                25% { color: #8B0000; } /* Dark Red */
+                50% { color: #4B0082; } /* Indigo */
+                75% { color: #006400; } /* Dark Green */
+                100% { color: #000080; } /* Navy Blue */
+            }
+            
+            .animated-name {
+                animation: colorChange 4s infinite;
+            }
+        </style>
+
         Currently pursuing a Bachelor's Degree in Chemistry.
         </p>
         <a class="resume-button" href="Kayle_Megginson_Resume.pdf" download="Kayle_Megginson_Resume.pdf">Download Resume</a>
@@ -412,7 +426,7 @@
     <div id="about" class="about-skills">
         <!-- About Section -->
         <div class="about">
-            <img src="images/Emily_Profile.jpg" alt="Personal Image" class="about-image">
+            <img src="images/Emily_photo.jpeg" alt="Personal Image" class="about-image">
             <h2>About Me</h2>
             <p>
                 Hello! I’m Emily Larson, a Chemistry student at Portland State University with a strong foundation in analytical chemistry, organic synthesis, and quantitative analysis. I bring hands-on experience with laboratory techniques such as spectroscopy, chromatography, and wet chemical analysis, supported by a solid background in general biology and calculus-based physics. I specialize in applying chemical principles to solve complex problems through careful experimentation, data-driven reasoning, and precise mathematical modeling. Passionate about connecting theory with practice, I’m driven to explore the molecular-level mechanisms that shape real-world systems and advance scientific understanding.            </p>
@@ -420,7 +434,7 @@
         <!-- Skills Section -->
         <div class="skills">
             <div class="skill">
-                <img src="images/solidworks.png" alt="Solid Works Logo">
+                <img src="images/Canva.png" alt="Solid Works Logo">
             </div>
             <div class="skill">
                 <img src="images/autocad.png" alt="AutoCAD Logo">
@@ -615,20 +629,20 @@
             
             <form id="contact-form" action="https://formspree.io/f/myzedwrd" method="POST" style="display: flex; flex-direction: column; gap: 1rem;">
                 <div class="form-group">
-                    <input type="text" id="name" name="name" placeholder="Name" required style="width: 100%; padding: 0.8rem; border: 2px solid #00308f; background: transparent; color: white; border-radius: 5px; font-size: 1rem;">
+                    <input type="text" id="name" name="name" placeholder="Name" required style="width: 100%; padding: 0.8rem; border: 2px solid #a9d256; background: transparent; color: white; border-radius: 5px; font-size: 1rem;">
                 </div>
                 
                 <div class="form-group">
-                    <input type="email" id="email" name="email" placeholder="Email" required style="width: 100%; padding: 0.8rem; border: 2px solid #00308f; background: transparent; color: white; border-radius: 5px; font-size: 1rem;">
+                    <input type="email" id="email" name="email" placeholder="Email" required style="width: 100%; padding: 0.8rem; border: 2px solid #a9d256; background: transparent; color: white; border-radius: 5px; font-size: 1rem;">
                 </div>
                 
                 <div class="form-group">
-                    <textarea id="message" name="message" placeholder="Message" rows="5" required style="width: 100%; padding: 0.8rem; border: 2px solid #00308f; background: transparent; color: white; border-radius: 5px; font-size: 1rem; resize: vertical;"></textarea>
+                    <textarea id="message" name="message" placeholder="Message" rows="5" required style="width: 100%; padding: 0.8rem; border: 2px solid #a9d256; background: transparent; color: white; border-radius: 5px; font-size: 1rem; resize: vertical;"></textarea>
                 </div>
                 
-                <div id="form-status" style="text-align: center; margin: 0.5rem 0; color: #00308f;"></div>
+                <div id="form-status" style="text-align: center; margin: 0.5rem 0; color: #a9d256;"></div>
                 
-                <button type="submit" class="resume-button" style="align-self: center; cursor: pointer; color: black; background: #00308f; border-color: #00308f; transition: all 0.3s;" onmouseover="this.style.color='white'" onmouseout="this.style.color='black'">SUBMIT</button>
+                <button type="submit" class="resume-button" style="align-self: center; cursor: pointer; color: black; background: #a9d256; border-color: #a9d256; transition: all 0.3s;" onmouseover="this.style.color='white'" onmouseout="this.style.color='black'">SUBMIT</button>
             </form>
         </div>
     </section>
